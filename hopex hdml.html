@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hopex Foundation - Compassionate service for the needy, stray animals, and community development. Support our mission with donations via cryptocurrency or bank transfer.">
+    <meta name="keywords" content="NGO, charity, donations, cryptocurrency, Bitcoin, Ethereum, animal welfare, community service, India, West Bengal">
+    <meta name="author" content="Hopex Foundation">
+    <meta property="og:title" content="Hopex Foundation - Compassion in Action">
+    <meta property="og:description" content="Support our mission to help the needy and stray animals through your generous donations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hopexfoundation.com">
+    <meta property="og:image" content="https://hopexfoundation.com/images/og-image.jpg">
+    <title>Hopex Foundation | Compassionate Service for All</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4a6fdc;
+            --secondary-color: #3a5bc7;
+            --accent-color: #ff6b6b;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #495057;
+            --white: #ffffff;
+            --gray: #6c757d;
+            --success-color: #28a745;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 500;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-accent {
+            background-color: var(--accent-color);
+        }
+
+        .btn-accent:hover {
+            background-color: #ff5252;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--dark-color);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--dark-color);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--white);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+
+        .mission-list {
+            margin-top: 30px;
+        }
+
+        .mission-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .mission-icon {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        /* Causes Section */
+        .causes {
+            background-color: var(--light-color);
+        }
+
+        .causes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .cause-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .cause-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .cause-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .cause-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .cause-card:hover .cause-image img {
+            transform: scale(1.1);
+        }
+
+        .cause-content {
+            padding: 25px;
+        }
+
+        .cause-content h3 {
+            margin-bottom: 15px;
+        }
+
+        /* Donate Section */
+        .donate {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+        }
+
+        .donate .section-title {
+            color: var(--white);
+        }
+
+        .donate .section-title::after {
+            background-color: var(--white);
+        }
+
+        .donate-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .donate-option {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .donate-option:hover {
+            transform: translateY(-10px);
+        }
+
+        .donate-icon {
+            font-size: 50px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .donate-option h3 {
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+
+        .donate-option p {
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .crypto-addresses {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .crypto-address {
+            margin-bottom: 15px;
+        }
+
+        .crypto-address h4 {
+            display: flex;
+            align-items: center;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+
+        .crypto-address h4 i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        .crypto-address p {
+            font-family: monospace;
+            background-color: var(--light-color);
+            padding: 10px;
+            border-radius: 4px;
+            word-break: break-all;
+            font-size: 14px;
+        }
+
+        .qr-code {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .qr-code img {
+            max-width: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: var(--white);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--white);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(74, 111, 220, 0.2);
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--white);
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .footer-col p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom p {
+            opacity: 0.6;
+            font-size: 14px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-image {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 0;
+                transition: var(--transition);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        /* Utility Classes */
+        .mt-1 { margin-top: 10px; }
+        .mt-2 { margin-top: 20px; }
+        .mt-3 { margin-top: 30px; }
+        .mt-4 { margin-top: 40px; }
+        .mt-5 { margin-top: 50px; }
+
+        .mb-1 { margin-bottom: 10px; }
+        .mb-2 { margin-bottom: 20px; }
+        .mb-3 { margin-bottom: 30px; }
+        .mb-4 { margin-bottom: 40px; }
+        .mb-5 { margin-bottom: 50px; }
+
+        .py-1 { padding-top: 10px; padding-bottom: 10px; }
+        .py-2 { padding-top: 20px; padding-bottom: 20px; }
+        .py-3 { padding-top: 30px; padding-bottom: 30px; }
+        .py-4 { padding-top: 40px; padding-bottom: 40px; }
+        .py-5 { padding-top: 50px; padding-bottom: 50px; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="https://via.placeholder.com/40x40" alt="Hopex Foundation Logo">
+                    <span>Hopex Foundation</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#causes">Our Causes</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Compassion in Action</h1>
+                <p class="delay-1">Join us in our mission to bring hope and support to the needy, stray animals, and our community through compassionate service and sustainable solutions.</p>
+                <div class="hero-btns delay-2">
+                    <a href="#donate" class="btn">Donate Now</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Hopex Foundation</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Hopex Foundation, our mission is rooted in compassion, service, and upliftment. We strive to bring hope and support to those in need by focusing on key humanitarian and community development initiatives.</p>
+                    
+                    <div class="mission-list">
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-hands-helping"></i></div>
+                            <div>
+                                <h3>Support for the Poor and Needy</h3>
+                                <p>To stand beside underprivileged individuals and families by providing essential resources such as food, clothing, and basic necessities, ensuring dignity and care for all.</p>
+                            </div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-place-of-worship"></i></div>
+                            <div>
+                                <h3>Infrastructure for Faith and Community</h3>
+                                <p>To build and maintain infrastructures like temples that serve as centers for spiritual and community growth.</p>
+                            </div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-paw"></i></div>
+                            <div>
+                                <h3>Care for Stray Animals</h3>
+                                <p>To feed, protect, and support stray animals with love and compassion, ensuring their well-being and safety.</p>
+                            </div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-ambulance"></i></div>
+                            <div>
+                                <h3>Medical Aid and Assistance</h3>
+                                <p>To provide accessible medical support and emergency aid to those in need, helping save lives and improve health outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h3>Accident Prevention for Stray Animals</h3>
+                                <p>To implement precautionary measures aimed at preventing accidents involving stray animals, including awareness campaigns, reflective gear, and safer shelters.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hopex Foundation Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Causes Section -->
+    <section class="section causes" id="causes">
+        <div class="container">
+            <h2 class="section-title">Our Causes</h2>
+            <div class="causes-grid">
+                <div class="cause-card fade-in">
+                    <div class="cause-image">
+                        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Helping the Needy">
+                    </div>
+                    <div class="cause-content">
+                        <h3>Support for the Poor</h3>
+                        <p>Providing food, clothing, and basic necessities to underprivileged families and individuals in our community.</p>
+                        <a href="#donate" class="btn btn-accent mt-3">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="cause-card fade-in delay-1">
+                    <div class="cause-image">
+                        <img src="https://images.unsplash.com/photo-1557053964-937650b63311?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Animal Welfare">
+                    </div>
+                    <div class="cause-content">
+                        <h3>Stray Animal Care</h3>
+                        <p>Feeding, medical care, and protection for stray animals in our community through dedicated programs.</p>
+                        <a href="#donate" class="btn btn-accent mt-3">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="cause-card fade-in delay-2">
+                    <div class="cause-image">
+                        <img src="https://images.unsplash.com/photo-1581093196276-3e3e06a6a9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Community Development">
+                    </div>
+                    <div class="cause-content">
+                        <h3>Community Development</h3>
+                        <p>Building and maintaining community spaces that foster spiritual growth and social connection.</p>
+                        <a href="#donate" class="btn btn-accent mt-3">Support This Cause</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="section donate" id="donate">
+        <div class="container">
+            <h2 class="section-title">Support Our Mission</h2>
+            <p class="text-center">Your generous donations help us continue our vital work in the community. Choose your preferred donation method below.</p>
+            
+            <div class="donate-options">
+                <div class="donate-option fade-in">
+                    <div class="donate-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Bank Transfer</h3>
+                    <p>Make a direct bank transfer to support our causes. All donations are tax-deductible.</p>
+                    <div class="crypto-addresses">
+                        <div class="crypto-address">
+                            <h4><i class="fas fa-university"></i> Bank Details</h4>
+                            <p>Account Name: Hopex Foundation</p>
+                            <p>Account Number: XXXX XXXX XXXX</p>
+                            <p>IFSC Code: XXXX000XXXX</p>
+                            <p>Bank Name: [Your Bank Name]</p>
+                            <p>Branch: [Your Branch Name]</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">Get Full Bank Details</a>
+                </div>
+                
+                <div class="donate-option fade-in delay-1">
+                    <div class="donate-icon">
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <h3>Cryptocurrency</h3>
+                    <p>Support us with your cryptocurrency donation. We accept multiple cryptocurrencies.</p>
+                    <div class="crypto-addresses">
+                        <div class="crypto-address">
+                            <h4><i class="fab fa-bitcoin"></i> Bitcoin (BTC)</h4>
+                            <p>bc1qrasdz0hw7mllmr00ym9k2t58lyf5594qz8amj0</p>
+                            <div class="qr-code">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=bitcoin:bc1qrasdz0hw7mllmr00ym9k2t58lyf5594qz8amj0" alt="BTC QR Code">
+                            </div>
+                        </div>
+                        <div class="crypto-address">
+                            <h4><i class="fab fa-ethereum"></i> Ethereum (ETH)</h4>
+                            <p>0xEb71CB130539CA175403629bBF16323238Fb9303</p>
+                        </div>
+                        <div class="crypto-address">
+                            <h4><i class="fas fa-coins"></i> Solana (SOL)</h4>
+                            <p>Eqmu7xNbpeu5TpFxMEyL9SCah3QWDpgV32Jq3oetQj49</p>
+                        </div>
+                        <div class="crypto-address">
+                            <h4><i class="fas fa-dollar-sign"></i> USDC</h4>
+                            <p>0xEb71CB130539CA175403629bBF16323238Fb9303</p>
+                        </div>
+                        <div class="crypto-address">
+                            <h4><i class="fab fa-reddit"></i> Dogecoin (DOGE)</h4>
+                            <p>D6gFad2em9WGGJmECitwZJdBqZGRqKoXqR</p>
+                        </div>
+                        <div class="crypto-address">
+                            <h4><i class="fas fa-tint"></i> USDT (TRC20)</h4>
+                            <p>THwUsVU8JeV5JZmEGTcwTxmR43Z34h5XMr</p>
+                            <div class="qr-code">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=THwUsVU8JeV5JZmEGTcwTxmR43Z34h5XMr" alt="TRC20 QR Code">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="donate-option fade-in delay-2">
+                    <div class="donate-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Anonymous Donation</h3>
+                    <p>If you prefer to donate anonymously, we respect your privacy. Your support is equally valued.</p>
+                    <p>For anonymous cryptocurrency donations, you can use the addresses above without providing any personal information.</p>
+                    <p>For anonymous bank transfers, please contact us for special arrangements.</p>
+                    <a href="#contact" class="btn btn-outline">Contact About Anonymous Donation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions or want to get involved? Reach out to us through any of the following methods.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Office Address</h4>
+                                <p>Bethuadahari, Nakashipara<br>
+                                District: Nadia<br>
+                                Division: Nadia North<br>
+                                State: WEST BENGAL<br>
+                                Pincode: 741126<br>
+                                Country: INDIA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@hopexfoundation.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 XXXXXXXXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hopex Foundation</h3>
+                    <p>Compassionate service for the needy, stray animals, and community development. Making a difference one act of kindness at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#causes">Our Causes</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Causes</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Support for the Poor</a></li>
+                        <li><a href="#">Community Development</a></li>
+                        <li><a href="#">Stray Animal Care</a></li>
+                        <li><a href="#">Medical Aid</a></li>
+                        <li><a href="#">Animal Accident Prevention</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Donation Methods</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Bank Transfer</a></li>
+                        <li><a href="#">Cryptocurrency</a></li>
+                        <li><a href="#">Anonymous
